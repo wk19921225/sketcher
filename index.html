@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Sketcher</title>
+
+<!-- bs4 css -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"/>
+	
+<!-- css pie -->
+<link rel="stylesheet" href="pie.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<!-- TensorFlow.js script -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+	
+<!-- canvas script -->
+<script src="fabric.js"></script>
+	
+<!-- main script -->
+<script src = "main.js" > </script>
+
+<!-- main css -->
+<link rel = "stylesheet" href="main.css" > 
+	
+</head>
+<body>
+
+
+<div class="row">
+  <div class="col" style ='margin-left:100px;'>
+<canvas id="canvas" width="300" height="300" class="canvas" style="border:1px solid #b9bfc9;margin-top:25px;"></canvas>
+    <div style="margin-top: 30px">我猜是：<span id="things"></span></div>
+<button type="button" class="btn btn-outline-primary" onclick ='erase()' style ='margin-top: 30px;margin-left:10px;' disabled>清除</button>
+
+</body>
+<script>
+	console.log('starting');
+	start('en')
+</script>
+</html>
